@@ -1,0 +1,13 @@
+.home-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/Home.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* Text color for better visibility */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
