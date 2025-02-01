@@ -1,0 +1,68 @@
+/* Form with the GIF as the background */
+.form {
+  width: 100%;
+  max-width: 450px;
+  padding: 2rem;
+  background-image: url("./gif.gif"); /* Your GIF background here */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Optional shadow */
+  position: relative;
+  margin: 0 auto; /* Centers the form on the screen */
+}
+
+/* Form input fields */
+.input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.7); /* Light background for inputs */
+}
+
+/* Focus effect on inputs */
+.input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+/* Button styles */
+.button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+
+/* Link styles for switching forms */
+.switch-container {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.switch {
+  font-size: 0.9rem;
+}
+
+.register-link {
+  color: #3498db;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.register-link:hover {
+  color: #2980b9;
+}

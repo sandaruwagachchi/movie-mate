@@ -1,0 +1,30 @@
+/* Apply background image to entire page */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Full viewport height */
+  background: url("./www.jpg") no-repeat center center fixed; /* Page background image */
+  background-size: cover; /* Ensures it covers the full page */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container to center form */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+/* We removed form-container's background here, keeping only page background */
+.form-container {
+  width: 400px;
+  padding: 2rem;
+  /* box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Optional box shadow */
+  border-radius: 10px;
+  position: relative;
+}
