@@ -1,0 +1,177 @@
+
+body {
+  margin: 0;
+  height: 100%;
+  /*background-color: black;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../src/assets/movie.jpg');
+}
+
+.booking-container {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+  max-width: 90%;
+  overflow: hidden;
+  color:red;
+}
+.booking-container h2{
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.screen {
+  background: lightgray;
+  color: black;
+  padding: 10px;
+  margin: 10px auto;
+  width: 90%;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.seats-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 44px); 
+  gap: 7px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: gray;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.seat:hover{
+  background-color: green;
+}
+
+.seat.sold {
+  background-color:  rgb(229,9, 20) !important; 
+  cursor: not-allowed;
+}
+
+.seat.selected {
+  background: green;
+}
+.seat-legend {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+  color:lightgray ;
+}
+.book-button {
+  padding: 15px 30px;
+  background:red;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.book-button:hover {
+  background: #218838;
+}
+.selectBox {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 15px;
+}
+
+.selectBox div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: gray;
+  cursor: pointer;
+  font-size: 12px;
+  width: 200px;
+  margin-top: 5px;
+  color: black;
+}
+
+label {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 5px;
+}
+input[type="date"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: gray;
+  cursor: pointer;
+  font-size: 14px;
+  width: 200px;
+  text-align: center;
+  color: black;
+  transition: 0.3s;
+}
+
+input[type="date"]:hover {
+  background: lightgray;
+}
+
+input[type="date"]:focus {
+  outline: none;
+  border: 2px solid red;
+}
+
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: gray;
+  cursor: pointer;
+  font-size: 14px;
+  width: 200px;
+  color: black;
+  text-align: center;
+  transition: 0.3s;
+}
+
+select:hover {
+  background: lightgray;
+}
+
+select:focus {
+  outline: none;
+  border: 2px solid red;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
